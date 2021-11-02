@@ -1,0 +1,1 @@
+export const INTERACTION_REQUIRED_STATUS_TEXT = "interaction_required";

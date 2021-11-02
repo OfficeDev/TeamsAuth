@@ -1,0 +1,50 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+    "version": "1.0.7",
+    "id": "b53aa4f9-21b8-4c03-8b7a-315d95a340ff",
+    "packageName": "com.contoso.aadSsoSample",
+    "developer": {
+        "name": "Decode SSO Tab for Teams",
+        "websiteUrl": "https://yourdomainhere.ngrok.io",
+        "privacyUrl": "https://yourdomainhere.ngrok.io/privacy.html",
+        "termsOfUseUrl": "https://yourdomainhere.ngrok.io/termsofuse.html"
+    },
+    "name": {
+        "short": "Decode SSO Tab for Teams",
+        "full": "Auth sample app for Microsoft Teams"
+    },
+    "description": {
+        "short": "Auth sample for Microsoft Teams",
+        "full": "This sample app provides a very simple app for Microsoft Teams which illustrates how single sign-on (SSO) should work for tabs."
+    },
+    "icons": {
+        "outline": "contoso20x20.png",
+        "color": "contoso96x96.png"
+    },
+    "accentColor": "#60A18E",
+    "staticTabs": [
+        {
+            "entityId": "com.contoso.teamsauthsample.static",
+            "name": "Auth Tab",
+            "contentUrl": "https://yourdomainhere.ngrok.io/tab.html",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "com.contoso.teamsauthsample2.static",
+            "name": "Auth Tab Rabia",
+            "contentUrl": "https://yourdomainhere.ngrok.io/sso",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "permissions": [],
+    "validDomains": [],
+    "webApplicationInfo": {
+        "id": "ed96a2c9-42f2-45cf-8458-ca7728f7a6f5",
+        "resource": "api://yourdomainhere.ngrok.io/ed96a2c9-42f2-45cf-8458-ca7728f7a6f5"
+    }
+}
