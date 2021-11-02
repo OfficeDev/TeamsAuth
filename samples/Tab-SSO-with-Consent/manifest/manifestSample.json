@@ -1,0 +1,40 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+    "version": "1.0.0",
+    "id": "a7ada931-0313-4a0a-8d1f-1f53ea06489e",
+    "packageName": "com.contoso.aadSsoConsentSample",
+    "developer": {
+        "name": "Decode SSO Tab for Teams",
+        "websiteUrl": "https://<HOSTNAME>",
+        "privacyUrl": "https://<HOSTNAME>/privacy",
+        "termsOfUseUrl": "https://<HOSTNAME>/termsofuse"
+    },
+    "name": {
+        "short": "Decode SSO Tab for Teams",
+        "full": "Auth sample app for Microsoft Teams"
+    },
+    "description": {
+        "short": "Auth sample for Microsoft Teams",
+        "full": "This sample app provides a very simple app for Microsoft Teams which illustrates how single sign-on (SSO) should work for tabs."
+    },
+    "icons": {
+        "outline": "contoso20x20.png",
+        "color": "contoso96x96.png"
+    },
+    "accentColor": "#60A18E",
+    "staticTabs": [{
+        "entityId": "com.contoso.teamsauthsample.static",
+        "name": "Auth Tab",
+        "contentUrl": "https://<HOSTNAME>/tab.html",
+        "scopes": [
+            "personal"
+        ]
+    }],
+    "permissions": [],
+    "validDomains": [],
+    "webApplicationInfo": {
+        "id": "<CLIENT_ID>",
+        "resource": "api://<HOSTNAME>/<CLIENT_ID>"
+    }
+}
